@@ -1,6 +1,6 @@
 # ReignDesign Test
 
-For this project was used some technologies in order to improve and a speed up its development, such as:
+For this project was used some technologies in order to improve and speed up its development, such as:
 
 -RXjava: for multi-threaded process and requests.
 
@@ -13,9 +13,13 @@ For this project was used some technologies in order to improve and a speed up i
 ## System and platform requirements
 
 -Android studio 3 beta-6
+
 -SDK Version 26
+
 -Build tools Version 26.0.1
+
 -Min SDK Version 19
+
 -Target SDK Version 26
 
 ## Pattern and Architecture
