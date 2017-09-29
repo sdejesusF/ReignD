@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">18dp</dimen>
+
+    <dimen name="article_height">95dp</dimen>
+
+    <dimen name="article_swipe_height">95dp</dimen>
+
+    <dimen name="article_title_text_size">15sp</dimen>
+
+    <dimen name="article_swipe_size">70dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ReignDesign</string>
+
+    <string name="empty_state">No data to display.</string>
+    <string name="error_loading">Error retrieving data from server.</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="article_author_date">%s - %s</string>
+
+    <string name="error_url_not_found">Sorry, Article does not have URL</string>
+
+</resources>

@@ -1,0 +1,877 @@
+{
+  "hits": [
+    {
+      "created_at": "2017-09-29T07:09:23.000Z",
+      "title": null,
+      "url": null,
+      "author": "piotrkubisa",
+      "points": null,
+      "story_text": null,
+      "comment_text": "I found your site when I was looking for some adblock my old BlackBerry Z10. Thanks to your great job I discovered  PAC proxy, I get rid of ads in apps and in the built-in browser, which does not handle extensions. On mobile phones based on Symbian, BlackBerry 10, Android proxy is configured per network connection (i.e. single Wi-Fi AP) and it is system-wide configuration, which has been working flawlessly under all aforementioned platforms.<p>As developer, I&#x27;d like to thank you for discovery of PAC proxy, because it has helped me many times to mimic or redirect network traffic, i.e when I needed to connect my phone with laptop using DNS names in the same local network. It is worth noting PAC proxy is superb to investigate or block traffic to servers where are collected usage metrics &#x2F; telemetry on android phones by setting redirect to your own server.<p>I would be grateful if you could answer on following question: How do you debug&#x2F;test PAC proxy if given pattern works or not? Because I am using the method known by most of PHP developers - develop, refresh (reconnect) and check manually by sending request once again if new entry works or not.",
+      "num_comments": null,
+      "story_id": 15356244,
+      "story_title": "No-Ads: Millions of banner ads blocked since 1996",
+      "story_url": "http://www.schooner.com/~loverso/no-ads/",
+      "parent_id": 15358967,
+      "created_at_i": 1506668963,
+      "_tags": [
+        "comment",
+        "author_piotrkubisa",
+        "story_15356244"
+      ],
+      "objectID": "15363362",
+      "_highlightResult": {
+        "author": {
+          "value": "piotrkubisa",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "I found your site when I was looking for some adblock my old BlackBerry Z10. Thanks to your great job I discovered  PAC proxy, I get rid of ads in apps and in the built-in browser, which does not handle extensions. On mobile phones based on Symbian, BlackBerry 10, <em>Android</em> proxy is configured per network connection (i.e. single Wi-Fi AP) and it is system-wide configuration, which has been working flawlessly under all aforementioned platforms.<p>As developer, I'd like to thank you for discovery of PAC proxy, because it has helped me many times to mimic or redirect network traffic, i.e when I needed to connect my phone with laptop using DNS names in the same local network. It is worth noting PAC proxy is superb to investigate or block traffic to servers where are collected usage metrics / telemetry on <em>android</em> phones by setting redirect to your own server.<p>I would be grateful if you could answer on following question: How do you debug/test PAC proxy if given pattern works or not? Because I am using the method known by most of PHP developers - develop, refresh (reconnect) and check manually by sending request once again if new entry works or not.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "story_title": {
+          "value": "No-Ads: Millions of banner ads blocked since 1996",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "http://www.schooner.com/~loverso/no-ads/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-29T05:15:12.000Z",
+      "title": null,
+      "url": null,
+      "author": "wvenable",
+      "points": null,
+      "story_text": null,
+      "comment_text": "The echo thing is that Amazon makes it US-only and Apple happily obliges and hides the app from me.  There isn&#x27;t a lot that is more anti-consumer than that.<p>I downloaded the Android APK and sideloaded it on my Android device.  Sure, the echo doesn&#x27;t support Canadian addresses (although it does have Canadian content) it otherwise works fine.",
+      "num_comments": null,
+      "story_id": 15354114,
+      "story_title": "Privacy",
+      "story_url": "https://www.apple.com/privacy/",
+      "parent_id": 15362815,
+      "created_at_i": 1506662112,
+      "_tags": [
+        "comment",
+        "author_wvenable",
+        "story_15354114"
+      ],
+      "objectID": "15362880",
+      "_highlightResult": {
+        "author": {
+          "value": "wvenable",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "The echo thing is that Amazon makes it US-only and Apple happily obliges and hides the app from me.  There isn't a lot that is more anti-consumer than that.<p>I downloaded the <em>Android</em> APK and sideloaded it on my <em>Android</em> device.  Sure, the echo doesn't support Canadian addresses (although it does have Canadian content) it otherwise works fine.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "story_title": {
+          "value": "Privacy",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://www.apple.com/privacy/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-29T05:10:23.000Z",
+      "title": null,
+      "url": null,
+      "author": "massar",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Well said.<p>Being one of those &quot;DNS people&quot; (having given a few talks etc on the subject), I also have been telling people that I cannot privately deploy DNSSEC, simply because the failure model is too high.<p>Currently with BIND and Knot one can setup automatic signing of zones, which makes things a bit easier, but it relies on setting up a master-slave relationship. My current deployment of auth dns servers is simply a bunch of master nsd&#x27;s, that get rsynced with their configs and reloaded (after a config test :). If one of them breaks, the others keep on running happily. In the case of master-slave though, if the master (the sole thing with the current keys), breaks (box dead, IP down, routing issue), the slaves after a while also do not know what to do anymore....<p>Thus, after all your hard work you go on vacation for a bit.... you come back and everything is gone, as your domain does not properly resolve anymore, no valid keys are there, not properly signed, not properly rotated...<p>The failure model is too big; even if you run a 24&#x2F;7 NOC, they will only notice problems when they hit you; and they will have to monitor DNSSEC verification specifically to notice them, and not get notified through twitter about it.<p>From a client perspective the failure model is a whole lot worse: when DNSSEC verification fails the answer is a flat-out denial of service. At least with TLS when a cert is invalid the client gets a chance to peek at it and go &#x27;meh, looks okay to me&#x27; (even though that is a &#x27;badidea&#x27; for chrome users ;) )<p>The problem with DNSSEC though is that with how the DNSSEC system works, with delegation in mind, it is hard to come up with something &#x27;better&#x27; than NSEC3, this as you want to be able to avoid people from listing your whole DNS zone, but you also want to be able to delegate subdomains to other folks.<p>And that is also what makes the root special: the keys have to be deployed in the resolvers world-wide and everybody needs them before they can use them. (Similar to TLS root certs); but the same goes for crypto-options: everything needs it before they can upgrade; for the Web, that is &#x27;solved&#x27; by having aggressive browser-updates, though as can be seen from ssllabs those are not the only clients, and people primarily update their Chrome and Firefox, thus there is a long-tail there too, hence why people do not normally configure the Mozilla Modern TLS configuration as they break those other, not updated, clients.<p>For resolvers this is worse getting new crypto in there, let alone keys: they are embedded typically in the OS (OSX mDNSResponder (which has bunches of problems over the years), Windows has it&#x27;s own, on Linux it depends on the day which one you get); but worse: large swaths of people rarely run upgrades on those systems...<p>Plus to add more pain to this: there are these people running Docker and other container images that never ever get updates. Oh, and then there is this magic called Android, congrats on 15% deployment for a 1 year old OS....<p>To finalize, my rant: unless somebody figures out an easy way to &#x27;upgrade the world&#x27; in a relatively short time frame (~2 to 3 months), we&#x27;ll always be stuck with older software&#x2F;configs(keys,etc)<p>And older software means: broken implementations that do not rotate keys properly, that do not have the latest keys, that do not have the latest TLS certs, that do not have security properties fixed.<p>And thus also, that even if somebody replaced&#x2F;fixed DNSSEC: there will always be clients that will not work along...",
+      "num_comments": null,
+      "story_id": 15361442,
+      "story_title": "DNSSEC KSK Rollover Postponed",
+      "story_url": "https://www.icann.org/news/announcement-2017-09-27-en",
+      "parent_id": 15361487,
+      "created_at_i": 1506661823,
+      "_tags": [
+        "comment",
+        "author_massar",
+        "story_15361442"
+      ],
+      "objectID": "15362855",
+      "_highlightResult": {
+        "author": {
+          "value": "massar",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Well said.<p>Being one of those &quot;DNS people&quot; (having given a few talks etc on the subject), I also have been telling people that I cannot privately deploy DNSSEC, simply because the failure model is too high.<p>Currently with BIND and Knot one can setup automatic signing of zones, which makes things a bit easier, but it relies on setting up a master-slave relationship. My current deployment of auth dns servers is simply a bunch of master nsd's, that get rsynced with their configs and reloaded (after a config test :). If one of them breaks, the others keep on running happily. In the case of master-slave though, if the master (the sole thing with the current keys), breaks (box dead, IP down, routing issue), the slaves after a while also do not know what to do anymore....<p>Thus, after all your hard work you go on vacation for a bit.... you come back and everything is gone, as your domain does not properly resolve anymore, no valid keys are there, not properly signed, not properly rotated...<p>The failure model is too big; even if you run a 24/7 NOC, they will only notice problems when they hit you; and they will have to monitor DNSSEC verification specifically to notice them, and not get notified through twitter about it.<p>From a client perspective the failure model is a whole lot worse: when DNSSEC verification fails the answer is a flat-out denial of service. At least with TLS when a cert is invalid the client gets a chance to peek at it and go 'meh, looks okay to me' (even though that is a 'badidea' for chrome users ;) )<p>The problem with DNSSEC though is that with how the DNSSEC system works, with delegation in mind, it is hard to come up with something 'better' than NSEC3, this as you want to be able to avoid people from listing your whole DNS zone, but you also want to be able to delegate subdomains to other folks.<p>And that is also what makes the root special: the keys have to be deployed in the resolvers world-wide and everybody needs them before they can use them. (Similar to TLS root certs); but the same goes for crypto-options: everything needs it before they can upgrade; for the Web, that is 'solved' by having aggressive browser-updates, though as can be seen from ssllabs those are not the only clients, and people primarily update their Chrome and Firefox, thus there is a long-tail there too, hence why people do not normally configure the Mozilla Modern TLS configuration as they break those other, not updated, clients.<p>For resolvers this is worse getting new crypto in there, let alone keys: they are embedded typically in the OS (OSX mDNSResponder (which has bunches of problems over the years), Windows has it's own, on Linux it depends on the day which one you get); but worse: large swaths of people rarely run upgrades on those systems...<p>Plus to add more pain to this: there are these people running Docker and other container images that never ever get updates. Oh, and then there is this magic called <em>Android</em>, congrats on 15% deployment for a 1 year old OS....<p>To finalize, my rant: unless somebody figures out an easy way to 'upgrade the world' in a relatively short time frame (~2 to 3 months), we'll always be stuck with older software/configs(keys,etc)<p>And older software means: broken implementations that do not rotate keys properly, that do not have the latest keys, that do not have the latest TLS certs, that do not have security properties fixed.<p>And thus also, that even if somebody replaced/fixed DNSSEC: there will always be clients that will not work along...",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "story_title": {
+          "value": "DNSSEC KSK Rollover Postponed",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://www.icann.org/news/announcement-2017-09-27-en",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-29T03:35:51.000Z",
+      "title": null,
+      "url": null,
+      "author": "molotovbliss",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Termius.com I&#x27;ve come to enjoy, it is an electron app but has been reliable on Android, Ubuntu, Win7 &amp; chrome (although chrome app is going away) on Ubuntu it does leverage snap like this editor.",
+      "num_comments": null,
+      "story_id": 15360509,
+      "story_title": "Modern terminal-based text editor",
+      "story_url": "https://micro-editor.github.io/index.html",
+      "parent_id": 15361573,
+      "created_at_i": 1506656151,
+      "_tags": [
+        "comment",
+        "author_molotovbliss",
+        "story_15360509"
+      ],
+      "objectID": "15362564",
+      "_highlightResult": {
+        "author": {
+          "value": "molotovbliss",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Termius.com I've come to enjoy, it is an electron app but has been reliable on <em>Android</em>, Ubuntu, Win7 &amp; chrome (although chrome app is going away) on Ubuntu it does leverage snap like this editor.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "story_title": {
+          "value": "Modern terminal-based text editor",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://micro-editor.github.io/index.html",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-29T02:29:59.000Z",
+      "title": null,
+      "url": null,
+      "author": "pers0n",
+      "points": null,
+      "story_text": null,
+      "comment_text": "You forgot outsourcer&#x2F;contractor. The company I work for has no one that can code iOS or Android apps, we outsource everything on Odesk and mark up the price, of course the quality is crap too. But since we can delete Google reviews and push down Yelp reviews and disable reviews on Facebook, everything is fine :&#x2F;",
+      "num_comments": null,
+      "story_id": 15357584,
+      "story_title": "Three Paths in the Tech Industry: Founder, Executive, or Employee",
+      "story_url": "https://blog.ycombinator.com/three-paths-in-the-tech-industry-founder-executive-or-employee/",
+      "parent_id": 15357584,
+      "created_at_i": 1506652199,
+      "_tags": [
+        "comment",
+        "author_pers0n",
+        "story_15357584"
+      ],
+      "objectID": "15362340",
+      "_highlightResult": {
+        "author": {
+          "value": "pers0n",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "You forgot outsourcer/contractor. The company I work for has no one that can code iOS or <em>Android</em> apps, we outsource everything on Odesk and mark up the price, of course the quality is crap too. But since we can delete Google reviews and push down Yelp reviews and disable reviews on Facebook, everything is fine :/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "story_title": {
+          "value": "Three Paths in the Tech Industry: Founder, Executive, or Employee",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://blog.ycombinator.com/three-paths-in-the-tech-industry-founder-executive-or-employee/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-29T01:19:18.000Z",
+      "title": null,
+      "url": null,
+      "author": "grizzles",
+      "points": null,
+      "story_text": null,
+      "comment_text": "The reason are having problems finding info is that most people don&#x27;t use java clients these days other than android.<p>You could try teavm.org or gwtproject.org if you really have your heart set on a java client, but I think most people would probably write the client in javascript, probably using react or vue.<p>If you just want to push the changed data, that sounds like one of the open source operational transform libs on github might be worth looking into.",
+      "num_comments": null,
+      "story_id": 15361048,
+      "story_title": "Ask HN: Library recommendations for a Client / Server project (all Java)",
+      "story_url": null,
+      "parent_id": 15361048,
+      "created_at_i": 1506647958,
+      "_tags": [
+        "comment",
+        "author_grizzles",
+        "story_15361048"
+      ],
+      "objectID": "15362073",
+      "_highlightResult": {
+        "author": {
+          "value": "grizzles",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "The reason are having problems finding info is that most people don't use java clients these days other than <em>android</em>.<p>You could try teavm.org or gwtproject.org if you really have your heart set on a java client, but I think most people would probably write the client in javascript, probably using react or vue.<p>If you just want to push the changed data, that sounds like one of the open source operational transform libs on github might be worth looking into.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "story_title": {
+          "value": "Ask HN: Library recommendations for a Client / Server project (all Java)",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-28T22:05:21.000Z",
+      "title": null,
+      "url": null,
+      "author": "cromwellian",
+      "points": null,
+      "story_text": null,
+      "comment_text": "True, but it is reusing an (alien) middleware on top of that. I like react-native and have used it, but a &lt;Text&gt;, &lt;View&gt;, or &lt;ScrollView&gt; isn&#x27;t the same thing as directly using the native widget APIs yourself, or using the native tooling like Android XML files, XIBs, etc. There&#x27;s a class of apps where you really need the direct access, and currently for React-Native, that means writing native modules and tying them to markup, which invariably leads to people trying to create versions that work on Android and iOS unified by a single &lt;Element&gt;.<p>React-Native works, apps like Discord prove that. But Gmail and Docs tried the approach of running their huge apps business logic 100% in JS on mobile, and the performance and memory usage didn&#x27;t meet expectations. If you try to do something like run formula recalculations on a 20,000 cell spreadsheet, on a low powered Android device, the performance is much worse than running the same code in Dalvik&#x2F;ART.",
+      "num_comments": null,
+      "story_id": 15357394,
+      "story_title": "Show HN: 300k lines of Java UI code running as JavaScript in browser",
+      "story_url": "http://reportmill.com/cj/RMStudio/",
+      "parent_id": 15361005,
+      "created_at_i": 1506636321,
+      "_tags": [
+        "comment",
+        "author_cromwellian",
+        "story_15357394"
+      ],
+      "objectID": "15361153",
+      "_highlightResult": {
+        "author": {
+          "value": "cromwellian",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "True, but it is reusing an (alien) middleware on top of that. I like react-native and have used it, but a &lt;Text&gt;, &lt;View&gt;, or &lt;ScrollView&gt; isn't the same thing as directly using the native widget APIs yourself, or using the native tooling like <em>Android</em> XML files, XIBs, etc. There's a class of apps where you really need the direct access, and currently for React-Native, that means writing native modules and tying them to markup, which invariably leads to people trying to create versions that work on <em>Android</em> and iOS unified by a single &lt;Element&gt;.<p>React-Native works, apps like Discord prove that. But Gmail and Docs tried the approach of running their huge apps business logic 100% in JS on mobile, and the performance and memory usage didn't meet expectations. If you try to do something like run formula recalculations on a 20,000 cell spreadsheet, on a low powered <em>Android</em> device, the performance is much worse than running the same code in Dalvik/ART.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "story_title": {
+          "value": "Show HN: 300k lines of Java UI code running as JavaScript in browser",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "http://reportmill.com/cj/RMStudio/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-28T18:21:44.000Z",
+      "title": "Google quietly discontinues NFC Smart Unlock without explanation",
+      "url": "https://betanews.com/2017/09/28/google-kills-nfc-smart-unlock-android/",
+      "author": "sparklemarkle",
+      "points": 7,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 3,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506622904,
+      "_tags": [
+        "story",
+        "author_sparklemarkle",
+        "story_15359554"
+      ],
+      "objectID": "15359554",
+      "_highlightResult": {
+        "title": {
+          "value": "Google quietly discontinues NFC Smart Unlock without explanation",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "url": {
+          "value": "https://betanews.com/2017/09/28/google-kills-nfc-smart-unlock-<em>android</em>/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "author": {
+          "value": "sparklemarkle",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-28T13:26:51.000Z",
+      "title": "Android unlock patterns are too easy to guess, stop using them",
+      "url": "https://nakedsecurity.sophos.com/2017/09/28/android-unlock-patterns-are-too-easy-to-guess-stop-using-them/",
+      "author": "bayhut",
+      "points": 3,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506605211,
+      "_tags": [
+        "story",
+        "author_bayhut",
+        "story_15356922"
+      ],
+      "objectID": "15356922",
+      "_highlightResult": {
+        "title": {
+          "value": "<em>Android</em> unlock patterns are too easy to guess, stop using them",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "https://nakedsecurity.sophos.com/2017/09/28/<em>android</em>-unlock-patterns-are-too-easy-to-guess-stop-using-them/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "author": {
+          "value": "bayhut",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-28T13:22:46.000Z",
+      "title": "Ask HN: Android PDF reader with reflow?",
+      "url": null,
+      "author": "awinter-py",
+      "points": 1,
+      "story_text": "Have not had a lot of luck reading PDFs on small screens. What are people using?<p>Bonus points if I don&#x27;t have to upload the file to G&#x2F;AMZN first.",
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506604966,
+      "_tags": [
+        "story",
+        "author_awinter-py",
+        "story_15356896",
+        "ask_hn"
+      ],
+      "objectID": "15356896",
+      "_highlightResult": {
+        "title": {
+          "value": "Ask HN: <em>Android</em> PDF reader with reflow?",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "author": {
+          "value": "awinter-py",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "Have not had a lot of luck reading PDFs on small screens. What are people using?<p>Bonus points if I don't have to upload the file to G/AMZN first.",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-28T08:31:36.000Z",
+      "title": "The harrowing world of a trauma cleaner",
+      "url": "https://www.theguardian.com/books/2017/sep/28/i-started-dry-retching-the-compassion-of-a-trauma-cleaner?CMP=Share_AndroidApp_Tweet",
+      "author": "DamonHD",
+      "points": 52,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 5,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506587496,
+      "_tags": [
+        "story",
+        "author_DamonHD",
+        "story_15355636",
+        "front_page"
+      ],
+      "objectID": "15355636",
+      "_highlightResult": {
+        "title": {
+          "value": "The harrowing world of a trauma cleaner",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "url": {
+          "value": "https://www.theguardian.com/books/2017/sep/28/i-started-dry-retching-the-compassion-of-a-trauma-cleaner?CMP=Share_<em>Android</em>App_Tweet",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "author": {
+          "value": "DamonHD",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-28T06:17:51.000Z",
+      "title": "Learn about ReactNative-the easier way of developing native Android and iOS apps",
+      "url": "https://www.youtube.com/watch?v=7cgYZVqps8c",
+      "author": "hammadn",
+      "points": 3,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506579471,
+      "_tags": [
+        "story",
+        "author_hammadn",
+        "story_15355055"
+      ],
+      "objectID": "15355055",
+      "_highlightResult": {
+        "title": {
+          "value": "Learn about ReactNative-the easier way of developing native <em>Android</em> and iOS apps",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "https://www.youtube.com/watch?v=7cgYZVqps8c",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "hammadn",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-28T01:26:50.000Z",
+      "title": "Matcha - iOS and Android UI apps in Go",
+      "url": "https://github.com/gomatcha/matcha",
+      "author": "divan",
+      "points": 2,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506562010,
+      "_tags": [
+        "story",
+        "author_divan",
+        "story_15353810"
+      ],
+      "objectID": "15353810",
+      "_highlightResult": {
+        "title": {
+          "value": "Matcha - iOS and <em>Android</em> UI apps in Go",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "https://github.com/gomatcha/matcha",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "divan",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-27T17:11:07.000Z",
+      "title": "AI now detects the majority of new malware on Android",
+      "url": "https://www.cyberscoop.com/android-malware-ai-detection/",
+      "author": "drewchainzz",
+      "points": 1,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506532267,
+      "_tags": [
+        "story",
+        "author_drewchainzz",
+        "story_15349908"
+      ],
+      "objectID": "15349908",
+      "_highlightResult": {
+        "title": {
+          "value": "AI now detects the majority of new malware on <em>Android</em>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "https://www.cyberscoop.com/<em>android</em>-malware-ai-detection/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "author": {
+          "value": "drewchainzz",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-27T16:56:20.000Z",
+      "title": "Android Devs: Auto Generate Your VersionCode",
+      "url": "https://medium.com/@akperkins1/quick-tip-auto-generate-your-versioncode-614629f7d3bd",
+      "author": "akperkins1",
+      "points": 2,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506531380,
+      "_tags": [
+        "story",
+        "author_akperkins1",
+        "story_15349743"
+      ],
+      "objectID": "15349743",
+      "_highlightResult": {
+        "title": {
+          "value": "<em>Android</em> Devs: Auto Generate Your VersionCode",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "https://medium.com/@akperkins1/quick-tip-auto-generate-your-versioncode-614629f7d3bd",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "akperkins1",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-27T16:45:00.000Z",
+      "title": "Show HN: Matcha – Build iOS and Android Apps in Go",
+      "url": "https://github.com/gomatcha/matcha",
+      "author": "overcyn",
+      "points": 2,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 1,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506530700,
+      "_tags": [
+        "story",
+        "author_overcyn",
+        "story_15349626",
+        "show_hn"
+      ],
+      "objectID": "15349626",
+      "_highlightResult": {
+        "title": {
+          "value": "Show HN: Matcha – Build iOS and <em>Android</em> Apps in Go",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "https://github.com/gomatcha/matcha",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "overcyn",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-27T14:06:39.000Z",
+      "title": "How we built a Progressive Web App for Android and iOS: tutorial, live example",
+      "url": "https://beebole.com/blog/building-pwa-web-app-android-ios/?utm_source=news.ycombinator.com&utm_medium=referral&utm_campaign=pwa&utm_content=post-tutorial-pwa",
+      "author": "BeeBole",
+      "points": 6,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506521199,
+      "_tags": [
+        "story",
+        "author_BeeBole",
+        "story_15347892"
+      ],
+      "objectID": "15347892",
+      "_highlightResult": {
+        "title": {
+          "value": "How we built a Progressive Web App for <em>Android</em> and iOS: tutorial, live example",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "https://beebole.com/blog/building-pwa-web-app-<em>android</em>-ios/?utm_source=news.ycombinator.com&utm_medium=referral&utm_campaign=pwa&utm_content=post-tutorial-pwa",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "author": {
+          "value": "BeeBole",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-27T13:03:22.000Z",
+      "title": "Bill Gates switches to Android phone",
+      "url": "http://www.bbc.co.uk/news/technology-41399823",
+      "author": "abalog",
+      "points": 98,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 121,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506517402,
+      "_tags": [
+        "story",
+        "author_abalog",
+        "story_15347335"
+      ],
+      "objectID": "15347335",
+      "_highlightResult": {
+        "title": {
+          "value": "Bill Gates switches to <em>Android</em> phone",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "http://www.bbc.co.uk/news/technology-41399823",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "abalog",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-27T11:58:50.000Z",
+      "title": "Snap: A dynamic language for Android development",
+      "url": "http://www.snapscript.org/",
+      "author": "niall_gallagher",
+      "points": 1,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506513530,
+      "_tags": [
+        "story",
+        "author_niall_gallagher",
+        "story_15346878"
+      ],
+      "objectID": "15346878",
+      "_highlightResult": {
+        "title": {
+          "value": "Snap: A dynamic language for <em>Android</em> development",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "http://www.snapscript.org/",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "niall_gallagher",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-27T10:07:37.000Z",
+      "title": "How to create a Cordova plugin for Android",
+      "url": "http://codingsans.com/blog/cordova-android-plugin",
+      "author": "womitt",
+      "points": 1,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1506506857,
+      "_tags": [
+        "story",
+        "author_womitt",
+        "story_15346289"
+      ],
+      "objectID": "15346289",
+      "_highlightResult": {
+        "title": {
+          "value": "How to create a Cordova plugin for <em>Android</em>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "url": {
+          "value": "http://codingsans.com/blog/cordova-<em>android</em>-plugin",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "android"
+          ]
+        },
+        "author": {
+          "value": "womitt",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    }
+  ],
+  "nbHits": 150419,
+  "page": 0,
+  "nbPages": 50,
+  "hitsPerPage": 20,
+  "processingTimeMS": 1,
+  "exhaustiveNbHits": false,
+  "query": "android",
+  "params": "advancedSyntax=true&analytics=false&query=android"
+}
